@@ -1,0 +1,17 @@
+
+python manage.py makemigrations
+python manage.py migrate
+Prática no Django Shell
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('livros/', views.livro_list_create, name='livros-list-create'),
+    path('livros/<int:pk>/', views.livro_detail, name='livro-detail'),
+
+git init
+git remote add origin https://github.com/username/biblioteca-django.git
+git add .
+git commit -m "Initial commit"
+git push -u origin main
